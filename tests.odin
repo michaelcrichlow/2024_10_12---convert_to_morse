@@ -26,7 +26,6 @@ main :: proc() {
 convert_to_morse :: proc(s: string, allocator := context.allocator) -> string {
 	// The function should be case insensitive.
 	test_string := strings.to_upper(s, allocator)
-	// print(test_string)
 
 	// The function should ignore any characters not included in the Morse code alphabet.
 	b := strings.builder_make(allocator)
